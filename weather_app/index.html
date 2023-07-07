@@ -7,29 +7,26 @@
     <title>Weather App</title>
 </head>
 <body>
-    <header>
-        Weather 
-    </header>
-
     <main>
+        <h1>Weather App</h1>
+
         <form id="locationForm">
-           
-              <label for="locationInput">Enter Location:</label>
-              <input type="text" id="locationInput" required />
-              
-              <button type="submit">
-                Get Weather 
-              </button>
-            </form>
-<div id="load" style="display: none">Loading...</div>
+            <div class="search-container">
+                <label for="locationInput">Enter location:</label>
+                <input type="text" id="locationInput" required />
+            </div>
+            <button type="submit">Get Weather</button>
+        </form>
 
-<div id="weatherData">
- 
-          </div>
-
-    </main>
+        <div id="loadingWeather" style="display: none">Prepare for Weather...</div>
+        <div id="weatherData"></div>
+     
+    </div>
+</main>
     <footer>
     </footer>
     <script src="script.js"></script>
+
+    </script>
 </body>
 </html>
